@@ -1,0 +1,415 @@
+html{
+  font-family: 'Istok Web', sans-serif;
+  color: #404040;
+  font-size: 18px;
+}
+
+/*NAVIGATION*/
+
+nav{
+  padding: 0px 24px;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h2{
+  height: 32px;
+  font-weight: normal;
+}
+
+
+.logo img{
+  height:50px;
+}
+
+.links{
+  line-height: 32px;
+}
+
+.links span{
+  margin-left: 16px;
+}
+
+.navimages{
+  display: none;
+}
+
+@media only screen and (max-width: 480px)and (orientation: portrait){
+
+.navimages{
+  width: 150%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navimages img{
+  display: flex;
+  height: 40px;
+}
+
+.logo img{
+  display: none;
+}
+
+.logo h2{
+  display: none;
+}
+
+.links{
+  display: none;
+}
+
+}
+
+/*BANNER*/
+
+.banner{
+  max-height: 100%;
+  width: auto;
+  color: charcoal;
+  background-color: #D3D3D3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.bannertext{
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+
+.banner img{
+  width: 60%;
+  margin: 0 auto;
+  margin: 32px 24px;
+}
+
+.bannertext{
+}
+
+.bannerbutton{
+  padding: 8px 0px;
+  margin-top: 32px;
+  height: 24px;
+  width: 500px;
+  color:white;
+  font-size: 20px;
+  background-color: #404040;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 480px)and (orientation: portrait){
+  .banner{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .banner img{
+    width: 100%;
+  }
+
+.bannertext{
+  margin-left: 16px;
+}
+
+  .bannertext h1{
+    margin: 32px 0px;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .bannertext p{
+    font-size: 1.5rem;
+  }
+
+  .bannerbutton{
+    width: 80%;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    font-weight: bold;
+  }
+}
+
+/*CAMPUS INFO*/
+.campusinfo{
+  background-color: #F5F5F5;
+  display: flex;
+  padding-bottom: 32px;
+}
+
+.campusinfo img{
+  margin: 32px 24px;
+}
+
+.infoleft{
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.infoleft h1{
+  margin-bottom: 24px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.infotextleft{
+  margin: 0px 24px 32px 24px;
+}
+
+.inforight{
+  width: 40%;
+  margin-bottom: 32px;
+  display:flex;
+  flex-direction: column;
+}
+
+.inforight img{
+  width: 35%;
+  height: auto;
+}
+
+.infobox{
+  display: flex;
+  flex-direction: row;
+}
+
+.infotext{
+  width:40%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.infotext a{
+  color: #1E90FF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.infotext p{
+  padding: 8px 0px;
+}
+
+@media only screen and (max-width: 480px)and (orientation: portrait){
+
+.campusinfo{
+  background-color:#F5F5F5;
+}
+
+  .infoleft {
+    display: none; /*hides content on smartphone screen*/
+  }
+
+  .inforight{
+    width: 100%;
+  }
+
+  .infobox{
+    background-color: #F5F5F5 !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infobox img{
+    width: 400px;
+    height: 200px;
+    margin-top: 16px;
+    margin-left: 16px;
+  }
+
+  .infotext{
+    width: 80%;
+    margin-left: 32px;
+    margin-bottom: 64px;
+  }
+
+  .infotext h2{
+    margin-left: 16px;
+  }
+
+  .infotext p{
+
+  }
+
+}
+
+/*PROGRAM INFORMATION*/
+.programinfo{
+  background-color: #DCDCDC;
+}
+
+.programinfo h1{
+  padding: 32px 0px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.courses{
+  padding-right: 40px;
+  padding-left: 72px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.coursebox{
+  width: 400px;
+  margin-bottom: 32px;
+  margin-right: 32px;
+}
+
+.coursebox img{
+  width: 400px;
+  height: auto;
+}
+
+.coursebox h2{
+  padding-top: 16px;
+}
+
+.coursebox p{
+  padding-top: 8px;
+}
+
+.courseboxtext{
+  height: 200px;
+  padding-top: 16px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  background-color: white;
+}
+
+@media only screen and (max-width: 480px)and (orientation: portrait){
+
+.programinfo{
+  border: 1px solid grey;
+  background-color: #F5F5F5;
+}
+
+.coursebox{
+  margin-top: 8px;
+}
+
+.coursebox img{
+  display: none;
+}
+
+.courseboxtext p{
+  display: none;
+}
+
+.courseboxtext{
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  background-color: #D3D3D3;
+}
+
+}
+
+/*THESIS EXHIBIT*/
+
+.exhibittext h1{
+  background-color:  #F5F5F5;
+  text-align: center;
+  padding: 32px 0px;
+  margin: 0px;
+}
+
+.thesisexhibit{
+  background-color:  #F5F5F5;
+  display: flex;
+}
+
+.exhibitleft{
+  width: 60%;
+  margin: 0px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.exhibitleft h2{
+  margin-top: 24px;
+  margin-left:24px;
+}
+
+.exhibitleft p{
+  width: 60%;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  margin-left: 24px;
+}
+
+.exhibitright{
+  width: 40%;
+}
+
+.exhibitright img{
+  width:35%;
+  height: auto;
+  margin: 16px;
+}
+
+@media only screen and (max-width: 480px)and (orientation: portrait){
+
+.exhibitright{
+  display: none;
+}
+
+.exhibitleft h2{
+  display: none;
+}
+
+.exhibitleft p{
+  display: none;
+}
+
+.exhibitleft video{
+  width: 150% !important;
+}
+
+}
+
+footer{
+  padding-top: 16px;
+  padding-left: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 480px)and (orientation: portrait){
+
+footer{
+  padding: 16px 0px;
+  margin-top: 24px;
+}
+}
+
+.terms span{
+  padding-top: 16px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 480px)and (orientation: portrait){
+
+.terms{
+  display: none;
+}
+
+}
